@@ -14,6 +14,7 @@
     --Yellow: #F0A750;
     --pink: #EC749D;
     --backdrop: rgba(24, 24, 24, 0.2);
+    --top-bar:#B88E2F;
 }
 
 /*---------- Reset css styles ----------- */
@@ -1247,8 +1248,8 @@ a:hover {
 /*------------ header ---------------- */
 
 .tf-topbar {
-    background-color: var(--Onsurface);
-    padding: 11px 0;
+    background-color: var(--top-bar);
+    padding: 7px 0;
 }
 
 .tf-topbar .topbar-left {
@@ -1274,6 +1275,7 @@ a:hover {
 
 .tf-topbar .wrapper-slider-topbar .tf-sw-top_bar p {
     text-align: center;
+    font-size: 12px;
 }
 
 .tf-topbar .navigation-topbar {
@@ -1313,7 +1315,7 @@ header {
     -o-transition: 0.2s ease-out;
     transition: 0.2s ease-out;
     z-index: 888;
-    background-color: var(--White);
+    background-color: var(--main);
 }
 
 .header-default .wrapper-header-left {
@@ -1336,6 +1338,7 @@ header {
     display: flex;
     font-size: 28px;
     position: relative;
+    color: var(--White);
 }
 
 .header-default .nav-icon .nav-icon-item:hover {
@@ -1428,7 +1431,7 @@ header {
 
 .header-default.header-bg {
     box-shadow: 0px 10px 25px 0px rgba(43, 52, 74, 0.12);
-    background-color: var(--White);
+    background-color: var(--main);
 }
 
 .header-default.header-bg.header-fixed .logo-header .logo-black {
@@ -1492,6 +1495,7 @@ header {
     font-size: 14px;
     line-height: 22px;
     position: relative;
+    color: var(--White);
 }
 
 .box-nav-ul .item-link .icon {
@@ -2895,7 +2899,7 @@ footer .footer-bottom-wrap .left {
 }
 
 .tf-slideshow.style-2 .wrap-slider {
-    max-height: 673px;
+    max-height: 600px;
 }
 
 .tf-slideshow.style-2 .box-content {
@@ -2919,7 +2923,7 @@ footer .footer-bottom-wrap .left {
 .tf-slideshow.style-2 .slider-home2-thumbs {
    position: absolute;
     right: 119px;
-    bottom: 181px;
+    bottom: 173px;
     width: 530px;
     height: auto;
     z-index: 5;
@@ -2953,7 +2957,7 @@ footer .footer-bottom-wrap .left {
 }
 
 .tf-slideshow.style-2 .thumbs-item .content a:hover {
-    color: var(--Critical) !important;
+    color: var(--top-bar) !important;
 }
 
 .tf-slideshow.style-2 .thumbs-item .content .text-button {
@@ -2970,7 +2974,7 @@ footer .footer-bottom-wrap .left {
 
 .tf-slideshow.style-2 .wrap-navigation {
     position: absolute;
-    bottom: 113px;
+    bottom: 124px;
     right: 113px;
     display: flex;
     gap: 26px;
@@ -3163,6 +3167,10 @@ footer .footer-bottom-wrap .left {
 .tf-btn.btn-white:hover {
     background-color: var(--Onsurface);
     color: var(--White);
+}
+
+.tf-btn.btn-yellow {
+    background-color: var(--Yellow);
 }
 
 .tf-btn.btn-onsurface {
@@ -6501,19 +6509,21 @@ form .cols>* {
 }
 
 .tf-box-icon .icon {
-    font-size: 48px;}
+    font-size: 41px;
+    color: var(--Secondary);
+}
 
 .tf-box-icon .title {
-    margin-bottom: 2px;
-    font-size: 20px;
-    line-height: 23px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    line-height: 15px;
     margin-top: 4px;
 }
 
 .tf-box-icon p {
     color: var(--Secondary);
-    font-size: 13px;
-    font-weight: 300;
+    font-size: 11px;
+    font-weight: 400;
 }
 
 /*------------ hover ---------------- */
@@ -6674,7 +6684,12 @@ form .cols>* {
     height: 100%;
     width: 100%;
 }
-
+.categories-sec .collection-position .img-style {
+    overflow: hidden;
+    position: relative;
+    height: 340px;
+    width: 100%;
+}
 .collection-position .img-style img {
     width: 100%;
     height: 100%;
@@ -6767,9 +6782,11 @@ form .cols>* {
 
 .collection-position.style-2.spacing-1 .content .cls-heading {
     margin-bottom: 12px;
-    gap: 4px;
+    gap: 1px;
 }
-
+.collection-position.style-2.spacing-1 .content .cls-heading p {
+    font-size: 14px;
+}
 .collection-position.style-2.spacing-2 {
     max-height: 555px;
 }
@@ -6814,11 +6831,11 @@ form .cols>* {
 
 .collection-position.style-4 .content  h4
 {
-    font-size: 21px;
+    font-size: 18px;
     line-height: 31px;
 }
 .collection-position.style-4 .content  h6 {
-    font-size: 15px;
+    font-size: 12px;
     line-height: 25px;
 }
 .collection-position.style-6 .cls-heading a {
@@ -6898,7 +6915,7 @@ form .cols>* {
 .card-product .card-product-wrapper .image-wrap {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 260px;
     position: relative;
 }
 
@@ -7043,7 +7060,7 @@ form .cols>* {
 }
 .craft-card.card-product .card-product-info  {
     margin-left: 19px;
-    background-color: #ffffff7b;
+    background-color: #ffffff9e;
     z-index: 10000;
     margin-top: -121px;
     position: absolute;
@@ -9956,7 +9973,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
 .relatest-post-item.style-row.style-2 .content {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 5px;
 }
 
 ul.list-tags {
@@ -10847,7 +10864,7 @@ ul.list-tags.has-bg a {
 }
 .clients.flat-spacing-2 {
     padding-top: 0px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
 }
 
 .heading-section {
@@ -12100,6 +12117,19 @@ ul.list-text.type-number {
     width: 32%;
 }
 
+.section-lookbook .heading-section {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 29px;
+    flex-direction: column;
+}
+
+
+.section-lookbook .heading-section .tf-btn.btn-yellow
+{
+    color: var(--White);
+}
+
 .section-lookbook .left-img .img-style,
 .section-lookbook .left-img .cls-lookbook {
     height: 100%;
@@ -12130,10 +12160,11 @@ ul.list-text.type-number {
 }
 
 .cls-item .image {
-    width: 90px;
-    height: 60px;
+    width: 130px;
+    height: 100px;
     overflow: hidden;
     flex-shrink: 0;
+    padding :24px;
 }
 
 .cls-item .image img {
@@ -12158,14 +12189,14 @@ ul.list-text.type-number {
 }
 .top-service-section .swiper {
     background-color: #fff;
-    padding: 27px 35px;
+    padding: 27px 27px;
     border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .flat-spacing-2.top-service-section {
     padding-top: 0px;
-    padding-bottom: 30px;
-    top: -56px;
+    padding-bottom: 0px;
+    top: -40px;
 }
 .tf-box-icon {
     display: flex;
@@ -12860,10 +12891,7 @@ ul.list-text.type-number {
         padding-left: 15px;
         padding-right: 15px;
     }
-    .sw-button-over .swiper-button-prev,
-    .sw-button-over .swiper-button-next {
-        display: none;
-    }
+    
     .terms-of-use-wrap {
         gap: 60px;
     }
