@@ -6687,7 +6687,7 @@ form .cols>* {
 .categories-sec .collection-position .img-style {
     overflow: hidden;
     position: relative;
-    height: 340px;
+    height: 455px;
     width: 100%;
 }
 .collection-position .img-style img {
@@ -6702,7 +6702,7 @@ form .cols>* {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgb(24, 24, 24);
+    background-color:rgb(24 24 24 / 78%);
     left: 0;
     z-index: -1;
     top: 0;
@@ -6919,6 +6919,12 @@ form .cols>* {
     position: relative;
 }
 
+.section-lookbook  .card-product .card-product-wrapper .image-wrap {
+    display: flex;
+    width: 100%;
+    height: 410px;
+    position: relative;
+}
 .card-product .card-product-wrapper img {
     display: block;
     height: 100%;
@@ -9758,7 +9764,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
     overflow: hidden;
     margin-bottom: 24px;
     position: relative;
-    max-width: 410px;
 }
 
 .blog-article-item .article-thumb a {
@@ -10829,23 +10834,23 @@ ul.list-tags.has-bg a {
 }
 
 .flat-spacing-2 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .flat-spacing-3 {
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .flat-spacing-4 {
-    padding-top: 100px;
-    padding-bottom: 97px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .flat-spacing-5 {
-    padding-top: 100px;
-    padding-bottom: 103px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .flat-spacing-6 {
@@ -13070,17 +13075,26 @@ ul.list-text.type-number {
     .tf-slideshow.style-2 .slider-home2-thumbs {
         left: 15px;
         right: 15px;
-        bottom: 30px;
-        height: 160px;
+        bottom: 84px;
+        height: auto;
         width: unset;
     }
+    .tf-slideshow .thumbs-item .content .slide-heading {
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 35px;
+   }
     .tf-slideshow.style-2 .thumbs-item .image {
         width: 120px;
         height: 160px;
     }
+    .top-service-section .swiper-slide
+    {
+     place-items: center;
+    }
     .tf-slideshow.style-2 .wrap-navigation {
-        bottom: 30px;
-        left: 240px;
+        bottom: 40px;
+        left: 302px;
         height: 40px;
         right: unset;
         gap: 15px;
@@ -13775,7 +13789,7 @@ ul.list-text.type-number {
 .tf-grid-layout {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    gap: 37px;
 }
 
 /* Responsive */
