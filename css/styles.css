@@ -2938,9 +2938,10 @@ footer .footer-bottom-wrap .left {
     display: flex;
     gap: 16px;
     padding: 35px;
-    background-color: #fff;
 }
-
+.swiper-slide-active .thumbs-item {
+    background: #ffffffa6 !important;
+}
 .tf-slideshow.style-2 .thumbs-item .image {
     width: 186px;
     height: 224px;
@@ -2991,7 +2992,7 @@ footer .footer-bottom-wrap .left {
 }
 
 .tf-slideshow.style-2 .wrap-navigation .sw-button:hover::before {
-    color: var(--Critical);
+    color: var(--top-bar);
 }
 
 .tf-slideshow.style-3 .wrap-slider {
@@ -13080,7 +13081,7 @@ ul.list-text.type-number {
         width: unset;
     }
     .tf-slideshow .thumbs-item .content .slide-heading {
-    font-size: 29px;
+    font-size: 27px;
     font-weight: 600;
     line-height: 35px;
    }
@@ -13094,7 +13095,7 @@ ul.list-text.type-number {
     }
     .tf-slideshow.style-2 .wrap-navigation {
         bottom: 40px;
-        left: 302px;
+        left: 284px;
         height: 40px;
         right: unset;
         gap: 15px;
